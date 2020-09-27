@@ -1,0 +1,421 @@
+/*=============================================
+GLOBAL
+=============================================*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+}
+
+.content-fluid {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0px;
+}
+
+/*=============================================
+Estilos del Header
+=============================================*/
+
+header #logotipo {
+  text-align: center;
+  padding: 20px;
+}
+
+header nav ul li a {
+  display: block;
+  background: #333333;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+/*=============================================
+Estilos de los iconos del slideshow
+=============================================*/
+
+#slideshow {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+#slideshow ul {
+  position: relative;
+  left: 0%;
+  margin: auto;
+  height: auto;
+  /* width: 400%; */
+  /* el width se acomoda con el js, dependiendo la cantidad de imagenes que hayan */
+  clear: both;
+  display: table;
+}
+
+#slideshow ul li {
+  position: relative;
+  float: left;
+  /* width: 25%; */
+  /* el width se acomoda con el js, dependiendo la cantidad de imagenes que hayan */
+}
+
+#slideshow img {
+  width: 100%;
+}
+
+#slideshow #paginacion {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  bottom: 10px;
+  left: 0;
+  z-index: 1;
+}
+
+#slideshow #paginacion li {
+  display: inline-block;
+  margin: 0px 5px;
+  cursor: pointer;
+  opacity: 0.5;
+  color: white;
+  text-shadow: 0 0 5px #333333;
+}
+
+#slideshow #paginacion li:first-child {
+  opacity: 1;
+}
+
+#slideshow .page-control {
+  position: absolute;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#slideshow #left {
+  top: 45%;
+  left: 2%;
+}
+
+#slideshow #right {
+  top: 45%;
+  right: 2%;
+}
+
+#slideshow #right i,
+#slideshow #left i {
+  text-shadow: 5px 2px 2px rgba(150, 150, 150, 0.7);
+}
+
+#slideshow ul li .info {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.103),
+    rgba(0, 0, 0, 0.603),
+    rgb(0, 0, 0)
+  );
+}
+
+#slideshow ul li .info h1 {
+  /* background: rgba(0, 0, 0, 0.5); */
+  padding: 5px 0;
+  font-family: "Permanent Marker", cursive;
+
+  text-shadow: 0px 0px 0 #899cd5, 1px 1px 0 #8194cd, 2px 2px 0 #788bc4,
+    3px 3px 0 #6f82bb, 4px 4px 0 #677ab3, 5px 5px 0 #5e71aa, 6px 6px 0 #5568a1,
+    7px 7px 0 #4c5f98, 8px 8px 0 #445790, 9px 9px 0 #3b4e87, 10px 10px 0 #32457e,
+    11px 11px 0 #2a3d76, 12px 12px 0 #21346d, 13px 13px 0 #182b64,
+    14px 14px 0 #0f225b, 15px 15px 0 #071a53, 16px 16px 0 #02114a,
+    17px 17px 0 #0b0841, 18px 18px 0 #130039, 19px 19px 0 #1c0930,
+    20px 20px 0 #251227, 21px 21px 20px rgba(0, 0, 0, 1),
+    21px 21px 1px rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+#slideshow ul li .info h3 {
+  /* background: rgba(0, 0, 0, 0.5); */
+  padding-bottom: 10px;
+}
+
+#slideshow ul li .info h3 a:visited,
+#slideshow ul li .info h3 a {
+  color: white;
+  font-family: "Permanent Marker", cursive;
+}
+
+/*=============================================
+PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
+=============================================*/
+
+@media (min-width: 1200px) {
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+  .col-lg-0 {
+    display: none;
+  }
+
+  /* Estilos del Header */
+  header nav ul li a {
+    margin: 30% 5px;
+    font-size: 14px;
+  }
+
+  header #logotipo img {
+    width: 100%;
+  }
+}
+
+/*=============================================
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
+=============================================*/
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  .col-md-0 {
+    display: none;
+  }
+
+  /* Estilos del Header */
+  header nav ul li a {
+    margin: 30% 5px;
+    font-size: 14px;
+  }
+
+  header #logotipo img {
+    width: 100%;
+  }
+}
+
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
+=============================================*/
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .col-sm-0 {
+    display: none;
+  }
+
+  /* Estilos del Header */
+  header nav ul li a {
+    margin: 28% 2px;
+    font-size: 12px;
+  }
+
+  header #logotipo img {
+    width: 100%;
+  }
+
+  /* Estilos del slideshow */
+  #slideshow ul li .info h1 {
+    font-size: 20px;
+  }
+
+  #slideshow ul li .info h3 {
+    font-size: 14px;
+  }
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
+=============================================*/
+
+@media (max-width: 767px) {
+  .col-xs-12 {
+    width: 100%;
+  }
+  .col-xs-11 {
+    width: 91.66666667%;
+  }
+  .col-xs-10 {
+    width: 83.33333333%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-8 {
+    width: 66.66666667%;
+  }
+  .col-xs-7 {
+    width: 58.33333333%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-5 {
+    width: 41.66666667%;
+  }
+  .col-xs-4 {
+    width: 33.33333333%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-2 {
+    width: 16.66666667%;
+  }
+  .col-xs-1 {
+    width: 8.33333333%;
+  }
+  .col-xs-0 {
+    display: none;
+  }
+
+  /* Estilos del Header */
+  header nav ul li a {
+    margin: 0px;
+    font-size: 14px;
+    border-bottom: 1px solid #444444;
+  }
+
+  header #logotipo img {
+    width: 50%;
+  }
+
+  /* Estilos del slideshow */
+  #slideshow ul li .info {
+    display: none;
+  }
+
+  #slideshow #left,
+  #slideshow #right {
+    font-size: 1em;
+  }
+}
+
+.light-red {
+  background: rgb(253, 98, 98);
+}
